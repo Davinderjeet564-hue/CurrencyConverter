@@ -64,7 +64,7 @@ export default function ApiKeyModal({ onKeySave }: ApiKeyModalProps) {
             </svg>
           </div>
           <div>
-            <h2 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+            <h2 className="text-2xl font-bold tracking-tight bg-linear-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
               API Key Required
             </h2>
             <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
@@ -114,7 +114,7 @@ export default function ApiKeyModal({ onKeySave }: ApiKeyModalProps) {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full py-3 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white rounded-xl font-semibold active:scale-[0.98] transition-all disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+            className="w-full py-3 bg-linear-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white rounded-xl font-semibold active:scale-[0.98] transition-all disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
           >
             {isLoading ? (
               <>

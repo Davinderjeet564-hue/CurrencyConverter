@@ -6,7 +6,7 @@ A Currency Converter made using React, TypeScript and ExchangeRateAPI. It has fe
 - React
 - TypeScript
 - Tailwind CSS
-- ExchangeRateAPI
+- ExchangeRateAPI (https://www.exchangerate-api.com)
 
 # How to Run
 1. Clone the repository with `git clone <repository_url>`
