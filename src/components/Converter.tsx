@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 
-function Converter() {
-  const apiKey: string = import.meta.env.VITE_EXCHANGE_RATE_API_KEY;
+interface ConverterProps {
+  apiKey: string;
+}
+
+function Converter({ apiKey }: ConverterProps) {
   const [inputValue, setInputValue] = useState<number | string>(1);
   const [fromCurrency, setFromCurrency] = useState<string>("USD");
   const [toCurrency, setToCurrency] = useState<string>("INR");
@@ -28,10 +31,10 @@ function Converter() {
   }
 
   useEffect(() => {
-    if (fromCurrency.length === 3) {
+    if (fromCurrency.length === 3 && apiKey) {
       getData();
     }
-  }, [fromCurrency]);
+  }, [fromCurrency, apiKey]);
 
   useEffect(() => {
     if (inputValue !== "" && rates[toCurrency] !== undefined) {
