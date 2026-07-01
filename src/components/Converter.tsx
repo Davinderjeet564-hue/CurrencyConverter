@@ -15,7 +15,7 @@ function Converter() {
     try {
       const response = await fetch(
         `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromCurrency}`,
-      );
+      );  
       const data = await response.json();
       if (data && data.conversion_rates) {
         setRates(data.conversion_rates);
